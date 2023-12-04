@@ -1,0 +1,21 @@
+name: Linters
+
+on: pull_request
+
+env:
+  FORCE_COLOR: 1
+
+jobs:
+  eslint:
+    name: Unit Tests with vitest and react-libary 
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "19.x"
+      - name: Setup vitest and react-library
+        run: |
+          yarn add --dev jsdom@22.x @testing-library/user-event@14.x @testing-library/react@v14.x @testing-library/jest-dom@6.x vite@4.x vitest@0.34.x 
+      - name: Run Test
+        yarn: yarn testm .

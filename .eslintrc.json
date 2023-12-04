@@ -1,0 +1,37 @@
+{   
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jest": true
+        },
+        "parser": "@babel/eslint-parser",
+        "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+        },
+    "extends": ["prettier", "airbnb", "plugin:react/recommended"],
+    "plugins": ["react"],
+    "rules": {
+      "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+      "react/react-in-jsx-scope": "off",
+      "import/no-unresolved": "off",
+      "no-shadow": "off",
+      "comma-dangle": "off",
+      "quotes": "off",
+      "no-param-reassign": "off",
+      "linebreak-style": "off",
+      "import/prefer-default-export": "off",
+      "import/no-extraneous-dependencies": [
+        "error",
+        {"devDependencies": true}
+      ]
+    },
+    "ignorePatterns": [
+      "dist/",
+      "build/",
+      "node_modules/"
+    ]
+}
