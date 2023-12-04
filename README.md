@@ -109,7 +109,7 @@ After you're finished please remove all the comments and instructions!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
+https://developer.tbd.website/docs/web5/build/apps/dinger-tutorial/
 <!-- Major Dependcies -->
 ## Major Dependencies <a name="major-dependencies"></a>
 - ant v5.9.2
